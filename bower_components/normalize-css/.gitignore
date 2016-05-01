@@ -5,3 +5,4 @@ npm-debug.log
 .travis.yml
 LICENSE.md
 bower.json
+normalize.css
