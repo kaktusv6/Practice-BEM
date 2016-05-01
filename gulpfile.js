@@ -1,9 +1,9 @@
 var gulp = require('gulp'),
-	prefixer = require('gulp-autoprefixer'),
 	livereload = require('gulp-livereload'),
 	connect = require('gulp-connect'),
 	sass = require('gulp-sass'),
-	jade = require('gulp-jade');
+	jade = require('gulp-jade'),
+	csscomb = require('gulp-csscomb');
 
 gulp.task('connect', function() {
 	connect.server({
@@ -12,23 +12,17 @@ gulp.task('connect', function() {
 	});
 });
 
-gulp.task('html', function () {
-	gulp.src('app/index.html')
+gulp.task('jade', function() {
+	gulp.src('dist/jade/index.jade')
+	.pipe(jade({
+		pretty: true
+	}))
 	.pipe(gulp.dest('app'))
 	.pipe(connect.reload());
 });
 
-gulp.task('jade', function() {
-  gulp.src('dist/jade/*.jade')
-  .pipe(jade({
-    pretty: true
-	}))
-  .pipe(gulp.dest('app'))
-  .pipe(connect.reload());
-});
-
-gulp.task('sass', function () {
-  gulp.src('dist/sass/style.scss')
+gulp.task('scss', function () {
+	gulp.src('dist/scss/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('dist/css'))
 	.pipe(connect.reload());
@@ -36,10 +30,7 @@ gulp.task('sass', function () {
 
 gulp.task('css', function () {
 	gulp.src('dist/css/*.css')
-	// .pipe(prefixer({ // autoPrefixer for Windows
-	// 	browsers: ['last 2 versions'],
-	// 	cascade: false
-	// }))
+	.pipe(csscomb())
 	.pipe(gulp.dest('app/css'))
 	.pipe(connect.reload());
 });
@@ -50,13 +41,29 @@ gulp.task('js', function () {
 	.pipe(connect.reload());
 });
 
+gulp.task('reload', function () {
+	gulp.pipe(connect.reload());
+});
+
+// task for watch project files
 gulp.task('watch',function () {
-	gulp.watch('dist/index.html', ['html'])
-	gulp.watch('dist/sass/**/*.scss', ['sass'], ['css'])
+	// watcher for html files
+	gulp.watch('app/index.html', ['reload'])
+
+	// watchers for scss files
+	gulp.watch('dist/scss/**/*.scss', ['scss'], ['css'])
+	gulp.watch('dist/scss/index.scss', ['scss'], ['css'])
+
+	// watcher for css files
 	gulp.watch('dist/css/*.css', ['css'])
+
+	// watcher for js files
 	gulp.watch('dist/js/*.js', ['js'])
-	gulp.watch('dist/jade/**/*.jade', ['jade'])
+
+	// watchers for jade files
+	gulp.watch('dist/jade/headers/*.jade', ['jade']);
 	gulp.watch('dist/jade/*.jade', ['jade'])
 });
 
-gulp.task('default', ['connect', 'html', 'jade', 'sass', 'css', 'js', 'watch']);
+// default task
+gulp.task('default', ['connect', 'jade', 'scss', 'css', 'js', 'watch']);
