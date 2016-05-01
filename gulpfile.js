@@ -24,12 +24,12 @@ gulp.task('jade', function() {
 gulp.task('scss', function () {
 	gulp.src('dist/scss/style.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('app/css'))
 	.pipe(connect.reload());
 });
 
 gulp.task('css', function () {
-	gulp.src('dist/css/*.css')
+	gulp.src('app/css/*.css')
 	.pipe(csscomb())
 	.pipe(gulp.dest('app/css'))
 	.pipe(connect.reload());
@@ -55,7 +55,7 @@ gulp.task('watch',function () {
 	gulp.watch('dist/scss/index.scss', ['scss'], ['css'])
 
 	// watcher for css files
-	gulp.watch('dist/css/*.css', ['css'])
+	gulp.watch('app/css/*.css', ['css'])
 
 	// watcher for js files
 	gulp.watch('dist/js/*.js', ['js'])
