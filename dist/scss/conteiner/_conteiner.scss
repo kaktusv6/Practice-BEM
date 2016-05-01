@@ -1,0 +1,9 @@
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+
+	position: relative;
+	.block{
+		height: $height-footer;
+	}
+}
