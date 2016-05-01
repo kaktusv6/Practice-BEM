@@ -22,7 +22,7 @@ gulp.task('jade', function() {
 });
 
 gulp.task('scss', function () {
-	gulp.src('dist/scss/style.scss')
+	gulp.src('dist/scss/index.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('app/css'))
 	.pipe(connect.reload());
@@ -42,7 +42,8 @@ gulp.task('js', function () {
 });
 
 gulp.task('reload', function () {
-	gulp.pipe(connect.reload());
+	gulp.src('app/**')
+	.pipe(connect.reload());
 });
 
 // task for watch project files
