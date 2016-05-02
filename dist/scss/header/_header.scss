@@ -1,8 +1,12 @@
 .header{
 	height: 100px;
-	width: 100%;
+	// width: 100%;
 	
 	background: {
 		color: $background-color-header;
 	};
+	.conteiner {
+		width: 1170px;
+		margin: 0 auto;
+	}
 }
