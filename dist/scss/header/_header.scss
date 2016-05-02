@@ -2,6 +2,7 @@
 	height: 100px;
 	width: 100%;
 	
+	position: relative;
 	background: {
 		color: $background-color-header;
 	};
@@ -22,7 +23,7 @@
 	width: 40%;
 	height: 100%;
 	position: relative;
-	
+	line-height: 100px;
 }
 .logo{
 	position: absolute;
@@ -48,23 +49,68 @@
 
 .header__menu{
 	width: 40%;
+	height: 100%;
 }
 .menu{
 	text-align: justify;
+	padding-right: 30px;
 	@include justify-one-line-text;
 	text-transform: uppercase;
 	font-size: 13pt;
 	font-family: HelverticaNeueBold,Arial;
+	line-height: 100px;
+	overflow: hidden;
+	&::after{
+		line-height: 0;
+	}
 }
 .menu__item{
 	display: inline-block;
+
 }
 .menu__link{ 
 	color: $color-text-item-menu;
+	&:hover{
+		color: $color-text-item-menu-hover;
+	}
 }
+
+/*--------- header division ---------*/
+
+.header_division{
+	display: inline-block;
+	position: absolute;
+	top: 30px;
+	bottom: 30px;
+	width: 1px;
+	border-right: 1px solid $color-division;
+}
+
 /*--------- header links ---------*/
 
 .header__links{
 	width: 20%;
-	height: 10px;
+	height: 100%;
+	position: relative;
+}
+.links{
+	position: absolute;
+	top: 33px;
+	bottom: 34px;
+	left: 30px;
+}
+.links__item{
+	display: inline-block;
+}
+.links__img-link{
+	display: inline-block;
+	width: $size-link;
+	height: $size-link;
+	background: {
+		image: url("../img/rss_link.png");
+		repeat: no-repeat;
+		size: cover;
+		position: center center
+	}
+	display: inline-block;
 }
