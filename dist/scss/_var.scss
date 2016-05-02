@@ -1,5 +1,12 @@
 // variable for style header
 $background-color-header: #fff;
+	// variable for style header logo
+	$color-text-bold-header-logo: #c2c2c2;
+	$color-text-light-header-logo: #a89574;
+
+	// variable for style header menu
+	$color-item-menu: #000;
+	$color-text-item-menu: #a7a7a7;
 
 // variable for style footer
 $height-footer: 80px;
@@ -10,4 +17,24 @@ $background-color-footer: #333;
 {
 	margin: 0;
 	padding: 0;
+}
+
+@mixin clear-fix {
+	&:after, &:before {
+		display: table;
+		content: "";
+	}
+	&:after{
+		clear: both;
+	}
+}
+
+@mixin justify-one-line-text
+{
+	&:after{
+		content: "";
+		display: inline-block;
+		width: 100%;
+		height: 0;
+	}
 }
