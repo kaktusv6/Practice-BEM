@@ -1,12 +1,70 @@
 .header{
 	height: 100px;
-	// width: 100%;
+	width: 100%;
 	
 	background: {
 		color: $background-color-header;
 	};
-	.conteiner {
-		width: 1170px;
-		margin: 0 auto;
-	}
+}
+.conteiner {
+	width: 1170px;
+	height: 100%;
+	margin: 0 auto;
+	@include clear-fix;
+}
+.header__logo, .header__menu, .header__links{
+	float: left;
+}
+
+/*--------- header logo ---------*/
+
+.header__logo{
+	width: 40%;
+	height: 100%;
+	position: relative;
+	
+}
+.logo{
+	position: absolute;
+	left: 0;
+	
+}
+.logo__bold, .logo__light{
+	vertical-align: middle;
+	float: left;
+	font-size: 41pt;
+}
+.logo__bold{
+	font-family: HelverticaNeueBold, Arial;
+	color: $color-text-bold-header-logo;
+}
+
+.logo__light{
+	font-family: HelverticaNeueLight, Arial;
+	color: $color-text-light-header-logo;
+}
+
+/*--------- header menu ---------*/
+
+.header__menu{
+	width: 40%;
+}
+.menu{
+	text-align: justify;
+	@include justify-one-line-text;
+	text-transform: uppercase;
+	font-size: 13pt;
+	font-family: HelverticaNeueBold,Arial;
+}
+.menu__item{
+	display: inline-block;
+}
+.menu__link{ 
+	color: $color-text-item-menu;
+}
+/*--------- header links ---------*/
+
+.header__links{
+	width: 20%;
+	height: 10px;
 }
