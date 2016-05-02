@@ -7,6 +7,14 @@ $background-color-header: #fff;
 	// variable for style header menu
 	$color-item-menu: #000;
 	$color-text-item-menu: #a7a7a7;
+	$color-text-item-menu-hover: #a89574;
+
+	// variable for style header division
+	$color-division: #dedede;
+
+	// variable for style header links
+	$size-link: 30px;
+
 
 // variable for style footer
 $height-footer: 80px;
@@ -20,18 +28,18 @@ $background-color-footer: #333;
 }
 
 @mixin clear-fix {
-	&:after, &:before {
+	&::after, &::before {
 		display: table;
 		content: "";
 	}
-	&:after{
+	&::after{
 		clear: both;
 	}
 }
 
 @mixin justify-one-line-text
 {
-	&:after{
+	&::after{
 		content: "";
 		display: inline-block;
 		width: 100%;
