@@ -8,9 +8,14 @@ html,
 body,
 div,
 ul,
-li
+li,
+p
 {
 	@include margin-padding-zero;	
+}
+
+h1{
+	@include margin-padding-zero;
 }
 
 body {
