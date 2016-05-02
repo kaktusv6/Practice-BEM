@@ -1,0 +1,46 @@
+.section__slider{
+	background-color: $background-color-section-title;
+}
+.slider__conteiner
+{
+	width: $size-content;
+	margin: 0 auto;
+	@include clear-fix;
+	padding: 60px 0;
+}
+
+/* ---------- slider text ---------- */
+
+.slider-text{
+	width: 70%;
+	float: left;
+}
+.slider-text__title{
+	color: $color-text-title;
+	font-size: 40pt;
+	font-family: HelverticaNeueBold, Arial;
+	line-height: 45pt;
+	margin-bottom: 50px;
+}
+.slider-text__scondary-title{
+	color: $color-text-secondary-title;
+	font-size: 18pt;
+	font-family: HelverticaNeueLight, Arial;
+	line-height: 30pt;
+	margin-bottom: 65px;
+}
+.slider-text__but{
+	color: $color-but;
+	border: 2px solid $color-but;
+	padding: 15px 25px;
+	border-radius: 5px;
+
+}
+
+/* ---------- slider img ---------- */
+
+.slider-img{
+	max-width: 30%;
+	min-height: 385px;
+	float: right;
+}
