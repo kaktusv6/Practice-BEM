@@ -1,11 +1,11 @@
-/* variable for style header */
+// variable for style header
 $background-color-header: #fff;
 
-/* variable for style footer */
+// variable for style footer
 $height-footer: 80px;
 $background-color-footer: #333;
 
-/* mixins */
+// mixins
 @mixin margin-padding-zero
 {
 	margin: 0;
