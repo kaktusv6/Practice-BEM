@@ -1,4 +1,28 @@
+/*--------- section intro ---------*/
+
+.section-intro{
+	background-color: $background-color-section-intro;
+}
+
 .section-intro__intro{
 	width: $size-content;
 	margin: 0 auto;
+	padding: 60px 0;
+}
+
+/*--------- section intro-text ---------*/
+
+.intro-text__title{
+	font-size: 20pt;
+	font-family: HelverticaNeueBold, Arial;
+	color: $color-intro-text-title;
+	margin-bottom: 30px;
+}
+
+.intro-text__secondary{
+	font-size: 12pt;
+	line-height: 12pt;
+	font-family: HelverticaNeueLight, Arial;
+	color: $color-intro-text-secondary;
+	margin-bottom: 30px;
 }
