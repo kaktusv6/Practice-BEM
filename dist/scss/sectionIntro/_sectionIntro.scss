@@ -12,6 +12,10 @@
 
 /*--------- section intro-text ---------*/
 
+.intro__intro-text{
+	margin-bottom: 45px;
+}
+
 .intro-text__title{
 	font-size: 20pt;
 	font-family: HelverticaNeueBold, Arial;
@@ -24,5 +28,20 @@
 	line-height: 12pt;
 	font-family: HelverticaNeueLight, Arial;
 	color: $color-intro-text-secondary;
-	margin-bottom: 30px;
+}
+
+/*--------- section intro-buttons ---------*/
+
+.intro-buttons__but{
+	padding: 15px 25px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.intro-buttons__but_gold{
+	color: $color-but-gold;
+	border: 2px solid $color-but-gold;
+}
+.intro-buttons__but_red{
+	color: $color-but-red;
+	border: 2px solid $color-but-red;
 }
