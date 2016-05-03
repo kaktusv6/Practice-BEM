@@ -1,7 +1,7 @@
-.section__slider{
+.section-slider{
 	background-color: $background-color-section-title;
 }
-.slider__conteiner
+.section-slider__slider
 {
 	width: $size-content;
 	margin: 0 auto;
@@ -11,7 +11,7 @@
 
 /* ---------- slider text ---------- */
 
-.slider-text{
+.slider__slider-text{
 	width: 70%;
 	float: left;
 }
@@ -39,7 +39,7 @@
 
 /* ---------- slider img ---------- */
 
-.slider-img{
+.slider__img{
 	max-width: 30%;
 	min-height: 385px;
 	float: right;
