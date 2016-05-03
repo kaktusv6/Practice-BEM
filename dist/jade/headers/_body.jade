@@ -4,8 +4,7 @@ body
 			.conteiner
 				.header__logo
 					a(href="#").logo
-						span.logo__bold Day
-						span.logo__light lite
+						img(src="img/logo.png", alt="").logo__img
 				.header__menu
 					ul.menu
 						li.menu__item
@@ -28,31 +27,37 @@ body
 					ul.links
 						li.links__item
 							a(href="#").links__link
-								.links__img-link
+								img(src="img/rss_link.png", alt="").links__img-link
 						li.links__item
 							a(href="#").links__link
-								.links__img-link
+								img(src="img/facebook_link.png", alt="").links__img-link
 						li.links__item
 							a(href="#").links__link
-								.links__img-link
+								img(src="img/twitter_link.png", alt="").links__img-link
 						li.links__item
 							a(href="#").links__link
-								.links__img-link
+								img(src="img/dribble_link.png", alt="").links__img-link
 						li.links__item
 							a(href="#").links__link
-								.links__img-link
+								img(src="img/pinterest_link.png", alt="").links__img-link
+				.clear
 		.empty
-			section.section__slider
-				.slider__conteiner
-					.slider-text
+			section.section-slider
+				.section-slider__slider
+					.slider__slider-text
 						h1.slider-text__title
 							='Purus Venenatis Ligula Mattis Sem Bibendum Elit'
 						p.slider-text__scondary-title
 							='Aenean lacinia bibendum nulla sed consectetur, tristique magna curabitur blandit tempus porttitor ultricies vehicula.'
 						a(href="#").slider-text__but
 							='Purchase Now'
-					.slider-img
+					.slider__img
 						img(src="img/img_slider.png", alt="").slider-img__item
-			
+				.clear
+			section.section-intro
+				.section-intro__intro
+					.intro__intro-text
+						h4.intro-text__title
+						p.intro-text__secondary
 		.block
 	footer.footer
