@@ -10,10 +10,11 @@
 	};
 }
 .conteiner {
-	width: $size-content;
+	max-width: $size-content;
 	height: 100%;
 	margin: 0 auto;
 	@include clear-fix;
+	@include media-content($size-content);
 }
 .header__logo, .header__menu, .header__links{
 	float: left;

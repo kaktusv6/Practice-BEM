@@ -8,6 +8,7 @@
 	width: $size-content;
 	margin: 0 auto;
 	padding: 60px 0;
+	@include media-content(1210px);
 }
 
 /*--------- section intro-text ---------*/

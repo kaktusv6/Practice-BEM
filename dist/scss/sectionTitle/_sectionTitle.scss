@@ -5,8 +5,9 @@
 {
 	width: $size-content;
 	margin: 0 auto;
-	@include clear-fix;
 	padding: 60px 0;
+	@include clear-fix;
+	@include media-content(1210px);
 }
 
 /* ---------- slider text ---------- */
