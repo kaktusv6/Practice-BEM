@@ -104,7 +104,7 @@ a
 
 .conteiner
 {
-    width: 1170px;
+    max-width: 1170px;
     height: 100%;
     margin: 0 auto;
 }
@@ -118,6 +118,14 @@ a
 .conteiner::after
 {
     clear: both;
+}
+@media (max-width: 1170px)
+{
+    .conteiner
+    {
+        max-width: 100%;
+        margin: 0 10px;
+    }
 }
 
 .header__logo,
@@ -267,6 +275,14 @@ a
 {
     clear: both;
 }
+@media (max-width: 1210px)
+{
+    .section-slider__slider
+    {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+}
 
 /* ---------- slider text ---------- */
 .slider__slider-text
@@ -327,6 +343,14 @@ a
     width: 1170px;
     margin: 0 auto;
     padding: 60px 0;
+}
+@media (max-width: 1210px)
+{
+    .section-intro__intro
+    {
+        max-width: 100%;
+        margin: 0 10px;
+    }
 }
 
 /*--------- section intro-text ---------*/
