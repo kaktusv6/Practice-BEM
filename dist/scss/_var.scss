@@ -37,12 +37,10 @@ $height-footer: 80px;
 $background-color-footer: #333;
 
 // mixins
-@mixin margin-padding-zero
-{
+@mixin margin-padding-zero{
 	margin: 0;
 	padding: 0;
 }
-
 @mixin clear-fix {
 	&::after, &::before {
 		display: table;
@@ -52,9 +50,7 @@ $background-color-footer: #333;
 		clear: both;
 	}
 }
-
-@mixin justify-one-line-text
-{
+@mixin justify-one-line-text{
 	&::after{
 		content: "";
 		display: inline-block;
@@ -62,9 +58,7 @@ $background-color-footer: #333;
 		height: 0;
 	}
 }
-
-@mixin clear-tag
-{
+@mixin clear-tag{
 	.clear-tag{
 		display: block;
 		clear: both;
@@ -72,4 +66,10 @@ $background-color-footer: #333;
 		height: 0;
 		content: "";
 	}	
+}
+@mixin media-content($size){
+	@media (max-width: $size) {
+		max-width: 100%;
+		margin: 0 10px;
+	}
 }
