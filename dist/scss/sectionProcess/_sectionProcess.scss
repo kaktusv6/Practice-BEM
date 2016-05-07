@@ -10,7 +10,7 @@
 /* --------------- section process text --------------- */
 
 .process__process-text{
-	padding: 60px 0;
+	padding: 60px 0 25px 0;
 }
 .process-text__title{
 	@include style-title(16pt);
@@ -22,12 +22,15 @@
 
 /* --------------- section process process-item --------------- */
 
-.process__process-item{
-	width: 100;
-	margin: 0 auto;
+.process__process-items{
+	width: 100%;
+	text-align: justify;
+	@include justify-one-line-text;
+	padding-top: 25px;
+	padding-bottom: 30px;
 }
 .process-item{
-	width: 19%;
+	width: 18%;
 	display: inline-block;
 	text-align: center;
 	&::after{
@@ -40,7 +43,6 @@
 			color: black;	
 		}
 	}
-	margin-bottom: 30px;
 }
 .process-item__img{
 	max-width: 90px;
