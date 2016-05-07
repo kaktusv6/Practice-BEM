@@ -19,7 +19,7 @@
 /*--------- header logo ---------*/
 
 .header__logo{
-	width: 35%;
+	width: 20%;
 	height: 100%;
 	position: relative;
 	line-height: 100px;
@@ -36,10 +36,12 @@
 /*--------- header menu ---------*/
 
 .header__menu{
-	width: 45%;
+	width: 60%;
 	height: 100%;
 }
 .menu{
+	width: 70%;
+	float: right;
 	text-align: justify;
 	padding-right: 30px;
 	@include justify-one-line-text;
