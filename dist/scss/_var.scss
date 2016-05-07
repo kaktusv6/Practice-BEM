@@ -2,6 +2,9 @@
 $size-content: 1170px;
 $color-but-gold: #a59477;
 $color-but-red: #a57780;
+$main-color-text-title: #767676;
+$main-color-text-secondary: #818181;
+$color-bottom-hr: #e7e7e7;
 
 // variable for style header
 $background-color-header: #fff;
@@ -72,4 +75,23 @@ $background-color-footer: #333;
 		max-width: 100%;
 		margin: 0 10px;
 	}
+}
+@mixin conteiner{
+	max-width: $size-content;
+	height: 100%;
+	margin: 0 auto;
+	@include clear-fix;
+	@include media-content($size-content);
+}
+@mixin style-title($size){
+	font-size: $size;
+	font-family: HelverticaNeueBold, Arial;
+	color: $main-color-text-title;
+	margin-bottom: 30px;
+}
+@mixin style-secondery($size, $line-h){
+	font-size: $size;
+	line-height: $line-h;
+	font-family: HelverticaNeueLight, Arial;
+	color: $main-color-text-secondary;
 }
