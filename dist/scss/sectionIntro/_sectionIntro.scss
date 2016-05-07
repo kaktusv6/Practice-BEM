@@ -5,10 +5,8 @@
 }
 
 .section-intro__intro{
-	width: $size-content;
-	margin: 0 auto;
 	padding: 60px 0;
-	@include media-content(1210px);
+	@include conteiner;
 }
 
 /*--------- section intro-text ---------*/
@@ -33,6 +31,10 @@
 
 /*--------- section intro-buttons ---------*/
 
+.intro__intro-buttons
+{
+	display: inline-block;
+}
 .intro-buttons__but{
 	padding: 15px 25px;
 	border-radius: 5px;
