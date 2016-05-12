@@ -3,17 +3,17 @@
 .header{
 	height: 100px;
 	width: 100%;
-	
 	position: relative;
-	background: {
-		color: $background-color-header;
-	};
+	background-color: $background-color-header;
+	border-bottom: 1px solid #e7e7e7; 
+	margin-bottom: 5px;
 }
 .conteiner {
 	@include conteiner;
 }
 .header__logo, .header__menu, .header__links{
 	float: left;
+	// display: inline-block;
 }
 
 /*--------- header logo ---------*/
@@ -36,7 +36,7 @@
 /*--------- header menu ---------*/
 
 .header__menu{
-	width: 60%;
+	width: 62%;
 	height: 100%;
 }
 .menu{
@@ -80,7 +80,7 @@
 /*--------- header links ---------*/
 
 .header__links{
-	width: 20%;
+	width: 18%;
 	height: 100%;
 	position: relative;
 }
@@ -88,13 +88,12 @@
 	position: absolute;
 	top: 33px;
 	bottom: 34px;
-	left: 30px;
+	right: 0px;
 }
 .links__item{
 	display: inline-block;
 }
 .links__img-link{
-	display: inline-block;
 	width: $size-link;
 	height: $size-link;
 	display: inline-block;
