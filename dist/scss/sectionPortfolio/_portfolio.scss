@@ -1,0 +1,55 @@
+/* --------------- section portfolio text --------------- */
+
+.portfolio__portfolio-text{
+	margin-bottom: 50px;
+}
+/* --------------- section portfolio --------------- */
+
+.section-portfolio__portfolio{
+	width: $size-content;
+	margin: 0 auto;
+}
+
+/* --------------- section portfolio items --------------- */
+
+.portfolio__items{
+	width: 100%;
+	@include clear-fix;
+}
+.items__item{
+	width: 275px;
+	float: left;
+	margin-right: 15px;
+	border: 1px solid #dedede;
+}
+.item__img-item, .item__text{
+	
+}
+.item__img-item{
+	max-width: 100%;
+	height: 210px;
+	background: gray;
+	border: 0px solid;
+}
+.text{
+	padding: 15px;
+}
+.item__text{
+	width: 100%;
+	text-align: center;
+	border-top: none;
+}
+.text__name, .text__second-name{
+	font-size: 11pt;
+}
+.text__name{
+	display: block;
+	width: auto;
+	color: $main-color-text-title;
+	font-family: HelverticaNeueBold;
+	margin: 0;
+}
+.text__second-name{
+	color: $color-but-gold;
+	font-family: HelverticaNeueLight;
+}
