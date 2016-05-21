@@ -31,7 +31,8 @@ body,
 div,
 ul,
 li,
-p
+p,
+span
 {
     margin: 0;
     padding: 0;
@@ -517,12 +518,6 @@ a
     color: #818181;
 }
 
-/* --------------- section portfolio text --------------- */
-.portfolio__portfolio-text
-{
-    margin-bottom: 50px;
-}
-
 /* --------------- section portfolio --------------- */
 .section-portfolio__portfolio
 {
@@ -530,10 +525,17 @@ a
     margin: 0 auto;
 }
 
+/* --------------- section portfolio text --------------- */
+.portfolio__portfolio-text
+{
+    margin-bottom: 50px;
+}
+
 /* --------------- section portfolio items --------------- */
 .portfolio__items
 {
     width: 100%;
+    padding-bottom: 50px;
 }
 .portfolio__items::after,
 .portfolio__items::before
@@ -603,6 +605,87 @@ a
     font-family: HelverticaNeueLight; 
 
     color: #a59477;
+}
+
+/* --------------- Section Blog --------------- */
+.section-blog__blog
+{
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+.section-blog__blog::after,
+.section-blog__blog::before
+{
+    display: table;
+
+    content: '';
+}
+.section-blog__blog::after
+{
+    clear: both;
+}
+
+.blog__posts,
+.blog__about
+{
+    float: left; 
+
+    width: 50%;
+}
+
+/* --------------- Section blog posts --------------- */
+.posts-list__post
+{
+    float: left;
+}
+
+/* --------------- Headers --------------- */
+.posts__header
+{
+    font-family: HelverticaNeueBold;
+    font-size: 17pt; 
+
+    color: #767676;
+}
+
+/* --------------- Date --------------- */
+.post__date
+{
+    display: inline-block;
+
+    width: 35px;
+    height: 35px;
+    padding: 15px;
+
+    text-align: center;
+
+    border: 2px solid #a59477;
+    border-radius: 35px;
+}
+
+.date
+{
+    font-family: HelverticaNeueBold;
+    font-size: 10pt;
+
+    vertical-align: middle; 
+    text-transform: uppercase;
+
+    color: #a59477;
+}
+
+.date__number
+{
+    font-size: 18pt; 
+
+    display: block;
+}
+
+/* --------------- Text --------------- */
+.post__post-text
+{
+    display: inline-block;
 }
 
 .footer
