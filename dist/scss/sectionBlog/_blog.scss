@@ -1,0 +1,17 @@
+/* --------------- Section Blog --------------- */
+
+.section-blog__blog{
+	@include conteiner;
+}
+.blog__posts, .blog__about{
+	width: 50%;
+	float: left;
+}
+
+/* --------------- Section blog post --------------- */
+
+.post__date
+{
+	display: inline;
+	border: 2px solid #a59477;
+}
