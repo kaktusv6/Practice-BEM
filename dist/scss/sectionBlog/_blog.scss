@@ -8,10 +8,46 @@
 	float: left;
 }
 
-/* --------------- Section blog post --------------- */
+/* --------------- Section blog posts --------------- */
 
-.post__date
-{
-	display: inline;
+.posts-list__post{
+	float: left;
+}
+
+/* --------------- Headers --------------- */
+
+.posts__header{
+	font-family: HelverticaNeueBold;
+	color: $main-color-text-title;
+	font-size: 17pt;
+}
+
+/* --------------- Date --------------- */
+
+$size-data: 35px;
+.post__date{
+	width: $size-data;
+	height: $size-data;
+	display: inline-block;
+	text-align: center;
 	border: 2px solid #a59477;
+	padding: 15px;
+	border-radius: 35px;
+}
+.date{
+	color: #a59477;
+	font-family: HelverticaNeueBold;
+	text-transform: uppercase;
+	font-size: 10pt;
+	vertical-align: middle;
+}
+.date__number{
+	display: block;
+	font-size: 18pt;
+}
+
+/* --------------- Text --------------- */
+
+.post__post-text{
+	display: inline-block;
 }
