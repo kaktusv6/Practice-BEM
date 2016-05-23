@@ -1,3 +1,4 @@
+@charset 'UTF-8';
 @font-face
 {
     font-family: HelverticaNeueBold;
@@ -19,6 +20,13 @@
     src: url('../fonts/helveticaneuecyr-ultralight.otf');
 }
 
+@font-face
+{
+    font-family: HelverticaNeue;
+
+    src: url('../fonts/helveticaneuecyr-Roman.otf');
+}
+
 html,
 body
 {
@@ -32,7 +40,7 @@ div,
 ul,
 li,
 p,
-span
+spank
 {
     margin: 0;
     padding: 0;
@@ -629,19 +637,25 @@ a
 .blog__posts,
 .blog__about
 {
-    float: left; 
+    display: inline-block; 
+    float: left;
 
-    width: 50%;
+    width: 47%;
 }
 
-/* --------------- Section blog posts --------------- */
-.posts-list__post
+.blog__posts
 {
-    float: left;
+    margin-right: 2%;
+}
+
+.blog__about
+{
+    margin-left: 2%;
 }
 
 /* --------------- Headers --------------- */
-.posts__header
+.posts__header,
+.about__header
 {
     font-family: HelverticaNeueBold;
     font-size: 17pt; 
@@ -649,19 +663,20 @@ a
     color: #767676;
 }
 
+/* --------------- Section blog posts --------------- */
+.posts-list__post
+{
+    float: left;
+
+    margin-bottom: 45px;
+}
+
 /* --------------- Date --------------- */
 .post__date
 {
-    display: inline-block;
+    display: inline-block; 
 
-    width: 35px;
-    height: 35px;
-    padding: 15px;
-
-    text-align: center;
-
-    border: 2px solid #a59477;
-    border-radius: 35px;
+    width: 15%;
 }
 
 .date
@@ -669,10 +684,19 @@ a
     font-family: HelverticaNeueBold;
     font-size: 10pt;
 
+    display: inline-block;
+
+    width: 35px;
+    height: 35px;
+    padding: 15px;
+
+    text-align: center;
     vertical-align: middle; 
     text-transform: uppercase;
 
     color: #a59477;
+    border: 2px solid #a59477;
+    border-radius: 35px;
 }
 
 .date__number
@@ -685,7 +709,61 @@ a
 /* --------------- Text --------------- */
 .post__post-text
 {
+    float: right;
+
+    width: 85%;
+}
+
+.post-text__header
+{
+    margin-bottom: 5px;
+
+    color: #767676;
+}
+
+.post-text__second-header
+{
+    font-weight: normal;
+
+    margin-bottom: 10px;
+
+    color: #a59477;
+}
+
+.post-text__likes::after
+{
+    content: '♥';
+}
+
+.post-text__text
+{
+    font-family: HelverticaNeue;
+    font-size: 10pt;
+
+    padding-bottom: 5px;
+
+    color: #818181;
+}
+
+/* --------------- Style Button --------------- */
+.post-text__read
+{
     display: inline-block;
+
+    padding: 10px 0;
+
+    cursor: pointer; 
+
+    color: #a59477;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+/* --------------- Section Blog About --------------- */
+.point::before
+{
+    content: '○ ';
 }
 
 .footer
