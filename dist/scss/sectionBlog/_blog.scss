@@ -4,28 +4,41 @@
 	@include conteiner;
 }
 .blog__posts, .blog__about{
-	width: 50%;
+	width: 47%;
 	float: left;
+	display: inline-block;
+}
+.blog__posts{
+	margin-right: 2%;
+}
+.blog__about{
+	margin-left: 2%;
+}
+
+/* --------------- Headers --------------- */
+
+.posts__header, .about__header{
+	font-family: HelverticaNeueBold;
+	color: $main-color-text-title;
+	font-size: 17pt;
 }
 
 /* --------------- Section blog posts --------------- */
 
 .posts-list__post{
 	float: left;
-}
+	margin-bottom: 45px}
 
-/* --------------- Headers --------------- */
-
-.posts__header{
-	font-family: HelverticaNeueBold;
-	color: $main-color-text-title;
-	font-size: 17pt;
-}
 
 /* --------------- Date --------------- */
 
 $size-data: 35px;
 .post__date{
+	width: 15%;
+	// height: 100%;
+	display: inline-block;
+}
+.date{
 	width: $size-data;
 	height: $size-data;
 	display: inline-block;
@@ -33,8 +46,7 @@ $size-data: 35px;
 	border: 2px solid #a59477;
 	padding: 15px;
 	border-radius: 35px;
-}
-.date{
+
 	color: #a59477;
 	font-family: HelverticaNeueBold;
 	text-transform: uppercase;
@@ -49,5 +61,43 @@ $size-data: 35px;
 /* --------------- Text --------------- */
 
 .post__post-text{
+	float: right;
+	width: 85%;
+}
+.post-text__header{
+	margin-bottom: 5px;
+	color: $main-color-text-title;
+}
+.post-text__second-header{
+	margin-bottom: 10px;
+
+	font-weight: normal;
+	color: #a59477;
+}
+.post-text__likes::after{
+	content: "♥";
+}
+.post-text__text{
+	padding-bottom: 5px;
+	font-size: 10pt;
+	font-family: HelverticaNeue;
+	color: #818181;
+}
+
+/* --------------- Style Button --------------- */
+
+.post-text__read{
+	border: 0;
+	background-color: transparent;
+	color: #a59477;
+	padding: 10px 0;
 	display: inline-block;
+	outline: none;
+	cursor: pointer;
+}
+
+/* --------------- Section Blog About --------------- */
+
+.point::before{
+	content: "○ ";
 }
