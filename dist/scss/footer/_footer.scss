@@ -1,10 +1,18 @@
-.footer{
+/* --------------- Footer --------------- */
+
+.section-footer{
 	height: $height-footer;
 	width: 100%;
-	
 	position: relative;
-	margin-top: -$height-footer;
-	background: {
-		color: $background-color-footer;
-	}
+	margin-top: -($height-footer + $height-copyright);
+	background-color: $background-color-footer;
+}
+
+/* --------------- Copyright --------------- */
+
+.copyright{
+	width: 100%;
+	height: $height-copyright;
+	position: relative;
+	background-color: $background-color-footer;
 }
