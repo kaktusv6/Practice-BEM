@@ -1,0 +1,37 @@
+/* --------------- Section Testimotion --------------- */
+
+.section-testimonial{
+	background-color: #f4f4f4;
+	padding: 60px 0;
+}
+.section-testimonial__testimonial{
+	@include conteiner;
+}
+.testimonial__text{
+	padding: 0 150px;
+	text-align: center;
+	font-family: HelverticaNeue;
+	color: $main-color-text-secondary;				
+}
+
+/* --------------- Quote --------------- */
+
+.text__quote{
+	margin-bottom : 30px;
+}
+
+/* --------------- Second Title --------------- */
+
+.text__s-t{
+	margin-bottom: 20px;
+	font-size: 13pt;
+	line-height: 20pt;
+}
+
+/* --------------- Signature --------------- */
+
+.text__signature{
+	color: $color-but-gold;
+	font-size: 11pt;
+	line-height: 20pt;
+}
