@@ -1,3 +1,7 @@
+.idea/
+bower_components/
 node_modules/
+
 *.list
 *.todo
+.editorconfig
