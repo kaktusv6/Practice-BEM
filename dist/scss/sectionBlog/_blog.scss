@@ -18,7 +18,7 @@
 /* --------------- Headers --------------- */
 
 .posts__header, .about__header{
-	font-family: HelverticaNeueBold;
+	font-family: HelverticaNeueBold, serif, Arial;
 	color: $main-color-text-title;
 	font-size: 17pt;
 }
@@ -48,7 +48,7 @@ $size-data: 35px;
 	border-radius: 35px;
 
 	color: #a59477;
-	font-family: HelverticaNeueBold;
+	font-family: HelverticaNeueBold, serif;
 	text-transform: uppercase;
 	font-size: 10pt;
 	vertical-align: middle;
@@ -80,8 +80,8 @@ $size-data: 35px;
 .post-text__text{
 	padding-bottom: 5px;
 	font-size: 10pt;
-	font-family: HelverticaNeue;
-	color: #818181;
+	font-family: HelverticaNeue, serif;
+	color: $main-color-text-secondary;
 }
 
 /* --------------- Style Button --------------- */
@@ -98,6 +98,10 @@ $size-data: 35px;
 
 /* --------------- Section Blog About --------------- */
 
-.point::before{
+.blog__about {
+	color: $main-color-text-secondary;
+}
+.blog__about ul li::before{
+	color: $color-point-li;
 	content: "○ ";
 }
