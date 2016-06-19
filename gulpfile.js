@@ -49,21 +49,21 @@ gulp.task('reload', function () {
 // task for watch project files
 gulp.task('watch',function () {
 	// watcher for html files
-	gulp.watch('app/index.html', ['reload'])
+	gulp.watch('app/index.html', ['reload']);
 
 	// watchers for scss files
-	gulp.watch('dist/scss/**/*.scss', ['scss'], ['css'])
-	gulp.watch('dist/scss/index.scss', ['scss'], ['css'])
+	gulp.watch('dist/scss/**/*.scss', ['scss'], ['css']);
+	gulp.watch('dist/scss/index.scss', ['scss'], ['css']);
 
 	// watcher for css files
-	gulp.watch('app/css/*.css', ['css'])
+	gulp.watch('app/css/*.css', ['css']);
 
 	// watcher for js files
-	gulp.watch('dist/js/*.js', ['js'])
+	gulp.watch('dist/js/*.js', ['js']);
 
 	// watchers for jade files
 	gulp.watch('dist/jade/headers/*.jade', ['jade']);
-	gulp.watch('dist/jade/*.jade', ['jade'])
+	gulp.watch('dist/jade/*.jade', ['jade']);
 });
 
 // default task
