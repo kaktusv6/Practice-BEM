@@ -4,7 +4,7 @@
 	height: $height-footer;
 	width: 100%;
 	position: relative;
-	margin-top: -($height-footer + $height-copyright);
+	margin-top: -$height-footer;
 	background-color: $background-color-footer;
 }
 
@@ -13,6 +13,5 @@
 .copyright{
 	width: 100%;
 	height: $height-copyright;
-	position: relative;
 	background-color: $background-color-footer;
 }
