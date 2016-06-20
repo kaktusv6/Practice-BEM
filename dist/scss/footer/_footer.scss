@@ -1,7 +1,7 @@
 /* --------------- Footer --------------- */
 
 .section-footer{
-	height: $height-footer;
+	height: auto;
 	width: 100%;
 	position: relative;
 	margin-top: -$height-footer;
@@ -45,28 +45,89 @@
 /* --------------- Twitter --------------- */
 
 .post{
-	margin-bottom: 40px;
+	margin-bottom: 15px;
 	color: $color-text-secondary-title;
 }
-.popular-post__text{
-	margin-bottom: 5px;
-}
-.data{
-	color: $color-intro-text-title;
-	font-size: 10pt;
-	line-height: 25pt;
-}
+
 /* --------------- Popular Posts --------------- */
 
 .popular-post{
 	color: $color-text-secondary-title;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
+}
+.popular-post__text{
+	//margin-bottom: 3px;
+}
+.data{
+	color: $color-intro-text-title;
+	font-size: 9pt;
+	line-height: 22pt;
 }
 
+/* --------------- Contact --------------- */
+
+.footer__contact{
+	form {
+		width: 220px;
+		height: 100%;
+	}
+}
+.contact__name,
+.contact__email,
+.contact__message{
+	width: 220px;
+	background-color: $color-background-input;
+	color: $color-text-secondary-title;
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+
+	padding: 5px;
+	font-size: 12pt;
+}
+.contact__name,
+.contact__email{
+	height: 35px;
+	margin-bottom: 10px;
+}
+.contact__message{
+	height: 120px;
+	resize: none;
+}
+.contact__but{
+	border: 2px solid $color-border-button;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+
+	font-family: HelverticaNeueBold, serif;
+	font-size: 10pt;
+	line-height: 22pt;
+	color: $color-text-button;
+	padding: 0 30px;
+
+	background: transparent;
+}
 /* --------------- Copyright --------------- */
 
-.copyright{
+.section-copyright{
 	width: 100%;
 	height: $height-copyright;
-	background-color: $background-color-footer;
+	background-color: $color-background-copyright;
+	margin-top: 60px;
+}
+.section-copyright__copyright{
+	@include conteiner;
+	position: relative;
+}
+.copyright__text{
+	position: absolute;
+	left: 0;
+	top: 40%;
+	bottom: 50%;
+	color: $color-division;
 }
