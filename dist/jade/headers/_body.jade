@@ -226,58 +226,71 @@ footer.section-footer
 	.section-footer__footer
 		aside.footer__contacts
 			h4.title Get In Touch
-			p.text
+			p.contacts__text
 				='Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna.'
-			address
-				='Moonshine Street No: 14/05'
+			address.contacts__address
+				span.address__text
+					='Moonshine Street No: 14/05'
+					br
+					='Light City, Jupiter'
 				br
-				='Light City, Jupiter'
+				span.adress__phone-number
+					='0247 541 65 87'
 				br
-				='0247 541 65 87'
-				br
-				='support@longwave.com'
+				span.address__email
+					='support@longwave.com'
 		aside.footer__twitter
 			h4.title Twitter
-			ul.twiiter__pots
+			ul.twiiter__posts
 				li.post
-					p.text
+					p.post__text
 						='Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.'
 				li.post
-					p.text
+					p.post__text
 						='Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.'
 				li.post
-					p.text
+					p.post__text
 						='Vestibulum id ligula porta  euismod semper. Maecenas faucibus mollis.'
 		aside.footer__posts
 			h4.title Popular Posts
 			ul.posts__popular
 				li.popular-post
-					p.text
+					p.popular-post__text
 						='Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.'
 					.data
-						span.data__day 14
-						span.data__month Nov,
-						span.data__year 2012
+						span.data__day
+							='14 '
+						span.data__month
+							='Nov, '
+						span.data__year
+							=' 2012'
 				li.popular-post
-					p.text
+					p.popular-post__text
 						='Scelerisque nisl consectetur et.'
 					.data
-						span.data__day 22
-						span.data__month May,
-						span.data__year 2012
+						span.data__day
+							='22 '
+						span.data__month
+							='May, '
+						span.data__year
+							=' 2012'
 				li.popular-post
-					p.text
-						='Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'
+					p.popular-post__text
+						='Pellentesque ornare sem lacinia quam venenatis vestibulum.'
 					.data
-						span.data__day 15
-						span.data__month July,
-						span.data__year 2012
+						span.data__day
+							='15 '
+						span.data__month
+							='July, '
+						span.data__year
+							=' 2012'
 		aside.footer__contact
 			h4.title Contact Form
 			form
 				input
 				input
-				textarea(readonly)
+				textarea()
+				br
 				input(type="submit")
 	section.copyright
 		p
