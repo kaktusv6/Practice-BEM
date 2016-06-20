@@ -40,7 +40,10 @@ div,
 ul,
 li,
 p,
-spank
+span,
+input,
+textarea,
+button
 {
     margin: 0;
     padding: 0;
@@ -74,6 +77,14 @@ a
     color: black;
 }
 
+input,
+textarea,
+button
+{
+    border: none; 
+    background: #fff;
+}
+
 /*--------- clear tag ---------*/
 .clear-tag
 {
@@ -90,11 +101,13 @@ a
 {
     position: relative; 
 
+    overflow: hidden;
+
     min-height: 100%;
 }
 .wrapper .block
 {
-    height: 80px;
+    height: 500px;
 }
 
 /*--------- header ---------*/
@@ -657,7 +670,7 @@ a
 .posts__header,
 .about__header
 {
-    font-family: HelverticaNeueBold;
+    font-family: HelverticaNeueBold, serif, Arial;
     font-size: 17pt; 
 
     color: #767676;
@@ -681,7 +694,7 @@ a
 
 .date
 {
-    font-family: HelverticaNeueBold;
+    font-family: HelverticaNeueBold, serif;
     font-size: 10pt;
 
     display: inline-block;
@@ -737,7 +750,7 @@ a
 
 .post-text__text
 {
-    font-family: HelverticaNeue;
+    font-family: HelverticaNeue, serif;
     font-size: 10pt;
 
     padding-bottom: 5px;
@@ -748,6 +761,10 @@ a
 /* --------------- Style Button --------------- */
 .post-text__read
 {
+    font-family: HelverticaNeueLight, sans-serif;
+    font-size: 10pt;
+    line-height: 20pt;
+
     display: inline-block;
 
     padding: 10px 0;
@@ -761,18 +778,274 @@ a
 }
 
 /* --------------- Section Blog About --------------- */
-.point::before
+.blog__about
 {
-    content: '○ ';
+    font-family: HelverticaNeue; 
+    font-size: 11pt;
+    line-height: 15pt;
+
+    color: #818181;
 }
 
-.footer
+.blog__about ul li::before
+{
+    content: '○ '; 
+
+    color: #ab9b7f;
+}
+
+/* --------------- Section Testimotion --------------- */
+.section-testimonial
+{
+    padding: 60px 0; 
+
+    background-color: #f4f4f4;
+}
+
+.section-testimonial__testimonial
+{
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+.section-testimonial__testimonial::after,
+.section-testimonial__testimonial::before
+{
+    display: table;
+
+    content: '';
+}
+.section-testimonial__testimonial::after
+{
+    clear: both;
+}
+
+.testimonial__text
+{
+    font-family: HelverticaNeue;
+
+    padding: 0 150px;
+
+    text-align: center;
+
+    color: #818181;
+}
+
+/* --------------- Quote --------------- */
+.text__quote
+{
+    margin-bottom: 30px;
+}
+
+/* --------------- Second Title --------------- */
+.text__s-t
+{
+    font-size: 13pt;
+    line-height: 20pt; 
+
+    margin-bottom: 20px;
+}
+
+/* --------------- Signature --------------- */
+.text__signature
+{
+    font-size: 11pt;
+    line-height: 20pt; 
+
+    color: #a59477;
+}
+
+/* --------------- Footer --------------- */
+.section-footer
 {
     position: relative;
 
     width: 100%;
+    height: auto;
+    margin-top: -500px;
+
+    background-color: #393939;
+}
+
+.section-footer__footer
+{
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.section-footer__footer::after,
+.section-footer__footer::before
+{
+    display: table;
+
+    content: '';
+}
+.section-footer__footer::after
+{
+    clear: both;
+}
+
+.footer__contacts,
+.footer__twitter,
+.footer__posts,
+.footer__contact
+{
+    font-family: HelverticaNeue;
+    font-size: 12pt;
+    line-height: 20pt; 
+
+    float: left;
+
+    width: 22%;
+    padding-right: 42px;
+
+    color: #fff;
+}
+
+.title
+{
+    font-family: HelverticaNeueBold; 
+
+    color: #dedede;
+}
+
+.footer__contact
+{
+    padding: 0;
+}
+
+/* --------------- Contacts --------------- */
+.contacts__text,
+.contacts__address
+{
+    font-style: normal; 
+
+    color: #a7a7a7;
+}
+
+.contacts__text
+{
+    margin-bottom: 15px;
+}
+
+/* --------------- Twitter --------------- */
+.post
+{
+    margin-bottom: 15px;
+
+    color: #a7a7a7;
+}
+
+/* --------------- Popular Posts --------------- */
+.popular-post
+{
+    margin-bottom: 15px; 
+
+    color: #a7a7a7;
+}
+
+.data
+{
+    font-size: 9pt;
+    line-height: 22pt; 
+
+    color: #767676;
+}
+
+/* --------------- Contact --------------- */
+.footer__contact form
+{
+    width: 220px;
+    height: 100%;
+}
+
+.contact__name,
+.contact__email,
+.contact__message
+{
+    font-size: 12pt; 
+
+    width: 220px;
+    padding: 5px;
+
+    color: #a7a7a7;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+    background-color: #2e2e2e;
+
+         -o-border-radius: 2px;
+}
+
+.contact__name,
+.contact__email
+{
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.contact__message
+{
+    height: 120px;
+
+    resize: none;
+}
+
+.contact__but
+{
+    font-family: HelverticaNeueBold, serif;
+    font-size: 10pt;
+    line-height: 22pt;
+
+    padding: 0 30px;
+
+    color: #a6a6a6;
+    border: 2px solid #a6a6a6;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    background: transparent; 
+
+         -o-border-radius: 5px;
+}
+
+/* --------------- Copyright --------------- */
+.section-copyright
+{
+    width: 100%;
     height: 80px;
-    margin-top: -80px;
+    margin-top: 60px; 
 
     background-color: #333;
+}
+
+.section-copyright__copyright
+{
+    position: relative; 
+
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+.section-copyright__copyright::after,
+.section-copyright__copyright::before
+{
+    display: table;
+
+    content: '';
+}
+.section-copyright__copyright::after
+{
+    clear: both;
+}
+
+.copyright__text
+{
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    left: 0;
+
+    color: #dedede;
 }
