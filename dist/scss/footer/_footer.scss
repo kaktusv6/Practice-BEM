@@ -5,7 +5,62 @@
 	width: 100%;
 	position: relative;
 	margin-top: -$height-footer;
-	background-color: $background-color-footer;
+	background-color: $color-background-footer;
+}
+.section-footer__footer{
+	@include conteiner;
+	padding-top: 60px;
+}
+.footer__contacts,
+.footer__twitter,
+.footer__posts,
+.footer__contact {
+	color: #fff;
+	width: 22%;
+	float: left;
+	padding-right: 42px;
+
+	font-family: HelverticaNeue;
+	font-size: 12pt;
+	line-height: 20pt;
+}
+.title{
+	color: $color-division;
+	font-family: HelverticaNeueBold;
+}
+.footer__contact{
+	padding: 0;
+}
+
+/* --------------- Contacts --------------- */
+
+.contacts__text, .contacts__address{
+	color: $color-text-secondary-title;
+	font-style: normal;
+}
+.contacts__text{
+	margin-bottom: 15px;
+}
+
+/* --------------- Twitter --------------- */
+
+.post{
+	margin-bottom: 40px;
+	color: $color-text-secondary-title;
+}
+.popular-post__text{
+	margin-bottom: 5px;
+}
+.data{
+	color: $color-intro-text-title;
+	font-size: 10pt;
+	line-height: 25pt;
+}
+/* --------------- Popular Posts --------------- */
+
+.popular-post{
+	color: $color-text-secondary-title;
+	margin-bottom: 30px;
 }
 
 /* --------------- Copyright --------------- */
