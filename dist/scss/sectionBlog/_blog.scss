@@ -88,9 +88,15 @@ $size-data: 35px;
 
 .post-text__read{
 	border: 0;
+
 	background-color: transparent;
 	color: #a59477;
+
+	font-family: HelverticaNeueLight, sans-serif;
+	font-size: 10pt;
+	line-height: 20pt;
 	padding: 10px 0;
+
 	display: inline-block;
 	outline: none;
 	cursor: pointer;
@@ -100,6 +106,9 @@ $size-data: 35px;
 
 .blog__about {
 	color: $main-color-text-secondary;
+	font-size: 11pt;
+	line-height: 15pt;
+	font-family: HelverticaNeue;
 }
 .blog__about ul li::before{
 	color: $color-point-li;
