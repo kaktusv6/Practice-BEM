@@ -287,10 +287,11 @@ footer.section-footer
 		aside.footer__contact
 			h4.title Contact Form
 			form
-				input
-				input
-				textarea()
-				br
-				input(type="submit")
-	section.copyright
-		p
+				input(type="name").contact__name
+				input(type="email").contact__email
+				textarea.contact__message
+				button.contact__but Submit
+	section.section-copyright
+		.section-copyright__copyright
+			p.copyright__text
+				='@ 2013 Daylite. All Rights Reserved.'
