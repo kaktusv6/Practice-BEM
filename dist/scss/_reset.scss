@@ -10,9 +10,11 @@ div,
 ul,
 li,
 p,
-span
-{
-	@include margin-padding-zero;	
+span,
+input,
+textarea,
+button{
+	@include margin-padding-zero;
 }
 
 h1,
@@ -37,7 +39,12 @@ a{
 	text-decoration: none;
 	color: black;
 }
-
+input,
+textarea,
+button{
+	background: #fff;
+	border: none;
+}
 /*--------- clear tag ---------*/
 
 @include clear-tag;
